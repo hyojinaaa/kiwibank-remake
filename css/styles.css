@@ -65,6 +65,42 @@ nav ul {
 	font-size: 12px;
 }
 
+#hero {
+	background-color: #333333;
+	padding-top: 200px;
+	background-image: url(../img/pie.jpeg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	max-width: 1346px;
+	margin: 0 auto;
+}
+
+#hero > p {
+	background-color: white;
+	display: inline-block;
+	padding: 10px;
+	float: right;
+}
+
+#hero div {
+	background-color: inherit;
+	color: white;
+	padding: 10px;
+	text-align: center;
+	clear: both;
+}
+
+#hero a {
+	background-color: white;
+	text-decoration: none;
+	color: #1b9dcf;
+	padding: 10px;
+	display: inline-block;
+}
+
+#hero button {
+	display: none;
+}
 
 
 
@@ -128,6 +164,29 @@ nav ul {
 	nav a span {
 		display: none;
 	}
+
+	#hero {
+		position: relative;
+		background-size: auto;
+		background-position: right;
+	}
+
+	#hero div {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 300px;
+	}
+
+	#hero:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+
+	#hero > p {
+		margin-bottom: 0;
+	}
 }
 
 @media all and (min-width: 970px) {
@@ -141,6 +200,22 @@ nav ul {
 	}
 }
 
+@media all and (min-width: 1020px) {
+
+	#hero button {
+		display: block;
+		position: absolute;
+		top: 50%;
+	}
+
+	#prev {
+		left: 0;
+	}
+
+	#next {
+		right: 0;
+	}
+}
 
 
 
