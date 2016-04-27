@@ -1,5 +1,6 @@
 body {
 	margin: 0;
+	background-color: #eaeaea;
 }
 
 nav {
@@ -83,7 +84,7 @@ nav ul {
 }
 
 #hero div {
-	background-color: inherit;
+	background-color: #666666;
 	color: white;
 	padding: 10px;
 	text-align: center;
@@ -105,6 +106,7 @@ nav ul {
 #products {
 	text-align: center;
 	padding: 10px;
+	background-color: white;
 }
 
 #products h1 {
@@ -133,7 +135,7 @@ nav ul {
 	height: 200px;
 	border: 1px solid #aaaaaa;
 	margin: 20px 0;
-	box-shadow: 0 4px 0 -10px #dddddd;
+	box-shadow: 0px 10px 0px -6px rgba(214,210,214,1);
 	text-align: left;
 }
 
@@ -192,6 +194,11 @@ span.limited {
 	#mobile-banking {
 		display: none;
 	}
+
+	#products {
+		width: 500px;
+		margin: 0 auto;
+	}
 }
 
 @media all and (min-width: 720px) {
@@ -242,12 +249,13 @@ span.limited {
 		position: relative;
 		background-size: auto;
 		background-position: right;
+
 	}
 
 	#hero div {
 		position: absolute;
 		top: 0;
-		left: 0;
+		left: 60px;
 		width: 300px;
 	}
 
@@ -261,6 +269,41 @@ span.limited {
 		margin-bottom: 0;
 	}
 }
+
+@media all and (min-width: 860px) {
+
+	#products div:first-child {
+		width: 50%;
+		float: left;
+	}
+
+	#products {
+		width: auto;
+		max-width: 1346px;
+		margin: 0 auto;
+		position: relative;
+		padding-bottom: 20px;
+		text-align: left;
+		padding: 0 120px 20px 120px;
+		box-sizing: border-box;
+	}
+
+	#products:after {
+		content: ' ';
+		display: block;
+		clear: both;
+	}
+
+	.percentage {
+		float: right;
+	}
+
+	.percentage + a {
+		position: absolute;
+		bottom: 10px;
+		right: 120px;
+
+	}
 
 @media all and (min-width: 970px) {
 
@@ -287,6 +330,16 @@ span.limited {
 
 	#next {
 		right: 0;
+	}
+}
+
+@media all and (min-width: 1346px) {
+
+	#products,
+	#hero {
+		border-left: 1px solid #dddddd;
+		border-right: 1px solid #dddddd;
+		box-sizing: border-box;
 	}
 }
 
